@@ -26,7 +26,7 @@ typedef Term Polynomial[MAX_POLYNOMIAL];
 
 char polynomialDivideByTerm(Polynomial polynomial, Term term) {
 	if (!term.coefficient) {
-		printf("Error: try to devide by zero-term\r\n");
+		printf("Error: try to divide by zero-term\r\n");
 		return OP_FAILED;
 	}
 
@@ -83,7 +83,7 @@ char verifyO(Polynomial temp, Polynomial computationalComplexityPolynomial, Term
 
 void printTerm(Term term) {
 	if (term.coefficient != 1) {
-		printf("%lf*", term.coefficient);
+		printf("%Lf*", term.coefficient);
 	}
 
 	if (term.degree == 1) {
