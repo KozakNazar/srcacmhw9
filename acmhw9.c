@@ -6,7 +6,7 @@
 #include "stdlib.h"
 #include "math.h"
 
-#define COMPUTATIONAL_COMPLEXITY_POLYNOMIAL { { 0.5, 2 }, { -3, 1 } }
+#define COMPUTATIONAL_COMPLEXITY_POLYNOMIAL { { 0.5, 2 }, { -0.25, 1 } }
 #define TERM_O_DEGREE__A 2
 #define TERM_O_DEGREE__B 3
 
@@ -25,7 +25,7 @@ typedef struct Term_ {
 typedef Term Polynomial[MAX_POLYNOMIAL];
 
 char polynomialDivideByTerm(Polynomial polynomial, Term term) {
-	if (term.coefficient) {
+	if (!term.coefficient) {
 		printf("Error: try to devide by zero-term\r\n");
 		return OP_FAILED;
 	}
