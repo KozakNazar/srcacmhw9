@@ -131,8 +131,6 @@ void printComputationalComplexityPolynomialAndBigO(char * promt, char* relationP
 		printTerm(polynomial[index]);
 	}
 	printf("\r\n");
-
-	return OP_SUCCESS;
 }
 
 int main() {
