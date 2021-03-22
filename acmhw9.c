@@ -74,7 +74,7 @@ char verifyO(Polynomial temp, Polynomial computationalComplexityPolynomial, Term
 		return OP_FAILED;
 	}
 	
-	if (limit == 0 || limit == INFINITY) {
+	if (limit <= 0 || limit == INFINITY) {
 		return OP_FAILED;
 	}
 		
